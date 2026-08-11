@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Furniture Restyler - Local Test</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 900px; margin: 32px auto; padding: 0 16px; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; }
+  label { display: block; margin-top: 12px; font-weight: 600; font-size: 0.9rem; }
+  input[type=text], textarea { width: 100%; padding: 8px; box-sizing: border-box; font: inherit; }
+  textarea { min-height: 60px; }
+  .row { display: flex; gap: 12px; align-items: center; }
+  .row > * { flex: 1; }
+  button { padding: 10px 18px; font-size: 1rem; cursor: pointer; }
+  #restyleBtn { margin-top: 16px; }
+  .images { display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
+  .images figure { margin: 0; flex: 1; min-width: 280px; }
+  .images img { width: 100%; border-radius: 8px; border: 1px solid #ddd; display: block; }
+  .images img.zoomable { cursor: zoom-in; }
+  #status { margin-top: 12px; font-size: 0.9rem; }
+  #status.error { color: #b00020; }
+  #status.ok { color: #1a7f37; }
+  .hint { font-size: 0.8rem; color: #555; margin-top: 4px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .chip { padding: 8px 14px; border-radius: 999px; border: 1px solid #999; background: #fff; font-size: 0.9rem; cursor: pointer; }
+  .chip.selected { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+  .thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .thumb { position: relative; width: 80px; height: 80px; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; display: block; }
+  .thumb .remove { position: absolute; top: -8px; right: -8px; width: 22px; height: 22px; border-radius: 50%; border: none; background: #b00020; color: #fff; font-size: 0.8rem; line-height: 1; cursor: pointer; padding: 0; }
+  .primary-preview { max-width: 320px; border-radius: 8px; margin-top: 8px; display: block; }
+</style>
+</head>
+<body>
+  <h1>Furniture Restyler &mdash; Local Test Page</h1>
+  <p>Talks directly to the NestJS backend at <code id="backendUrlLabel"></code>. Backend must be running (<code>npm run start:dev</code>) and Forge Neo must be up with <code>--api</code> enabled.</p>
+
+  <label>Backend URL
+    <input type="text" id="backendUrl" value="http://localhost:3000" />
+  </label>
+
+  <label>Room photo</label>
+  <div class="row">
+    <button type="button" id="primaryCameraBtn">Camera</button>
+    <button type="button" id="primaryGalleryBtn">Gallery</button>
+  </div>
+  <input type="file" id="primaryCameraInput" accept="image/*" capture="environment" hidden />
+  <input type="file" id="primaryGalleryInput" accept="image/*" hidden />
+  <img id="primaryPreview" class="primary-preview" hidden />
+
+  <label>Other angles of this room (optional, up to 3)</label>
+  <div class="row">
+    <button type="button" id="additionalCameraBtn">Camera</button>
+    <button type="button" id="additionalGalleryBtn">Gallery</button>
+  </div>
+  <input type="file" id="additionalCameraInput" accept="image/*" capture="environment" hidden />
+  <input type="file" id="additionalGalleryInput" accept="image/*" multiple hidden />
+  <div class="thumbs" id="additionalThumbs"></div>
+  <p class="hint">Reference only - these help the model understand the room's real materials/lighting/architecture, but only the main photo above gets restyled and returned.</p>
+
+  <label>Room type</label>
+  <div class="chips" id="roomTypeChips">
+    <button type="button" class="chip" data-value="living_room_sofa">Living Room (Sofa)</button>
+    <button type="button" class="chip" data-value="living_room_sectional">Living Room (Sectional)</button>
+    <button type="button" class="chip" data-value="bedroom">Bedroom</button>
+    <button type="button" class="chip" data-value="dining_room">Dining Room</button>
+  </div>
+
+  <label>Color (optional)</label>
+  <div class="chips" id="colorChips">
+    <button type="button" class="chip" data-value="white">White</button>
+    <button type="button" class="chip" data-value="cream">Cream</button>
+    <button type="button" class="chip" data-value="beige">Beige</button>
+    <button type="button" class="chip" data-value="gray">Gray</button>
+    <button type="button" class="chip" data-value="black">Black</button>
+    <button type="button" class="chip" data-value="natural_wood">Natural Wood</button>
+  </div>
+  <p class="hint">Room type + color are sent as-is; the backend builds the actual hidden prompt from them (same as the real app). Leave "Prompt override" below blank to use that - only fill it in to bypass categories entirely for debugging.</p>
+
+  <label>Room dimensions in meters (optional - manual entry only)
+    <div class="row">
+      <input type="text" id="roomLength" placeholder="Length (e.g. 4.2)" />
+      <input type="text" id="roomWidth" placeholder="Width (e.g. 3.5)" />
+      <input type="text" id="roomHeight" placeholder="Height (optional)" />
+    </div>
+  </label>
+  <p class="hint">Only steers furniture-size wording in the hidden prompt (e.g. compact vs large sofa/bed, 6-seat vs 8-seat dining table) - not precise geometric placement. The native Android app also offers an AR-assisted scan for this, but that can't be replicated here: Safari on iOS has no WebXR support at all (confirmed against caniuse.com), so browser-based AR isn't technically possible on iPhone regardless of how this page is built.</p>
+
+  <label>Prompt override (optional - overrides room type/color entirely when set)
+    <textarea id="promptOverride" placeholder="professional interior photo, hmcntrfrn, furnished room, high quality, realistic lighting, photorealistic"></textarea>
+  </label>
+
+  <div class="row">
+    <label>Denoising strength (0-1)
+      <input type="text" id="denoisingStrength" value="0.9" />
+    </label>
+  </div>
+  <p class="hint">The backend automatically detects walls/ceiling/windows/doors and keeps them pixel-identical to the original photo - only furniture gets regenerated. No manual masking needed.</p>
+
+  <button id="restyleBtn">Restyle Room</button>
+  <div id="status"></div>
+
+  <div id="resultsContainer"></div>
+
+<script>
+  const backendUrlInput = document.getElementById('backendUrl');
+  // When served by the backend itself (http/https, not opened as a local
+  // file), default to the same host:port the page was loaded from - correct
+  // whether that's localhost on the PC or a tunnel/Tailscale address from a
+  // phone's browser, with no hardcoded address to keep in sync.
+  if (location.protocol.startsWith('http')) {
+    backendUrlInput.value = location.origin;
+  }
+  const backendUrlLabel = document.getElementById('backendUrlLabel');
+  const promptOverride = document.getElementById('promptOverride');
+  const denoisingStrength = document.getElementById('denoisingStrength');
+  const roomLength = document.getElementById('roomLength');
+  const roomWidth = document.getElementById('roomWidth');
+  const roomHeight = document.getElementById('roomHeight');
+  const restyleBtn = document.getElementById('restyleBtn');
+  const status = document.getElementById('status');
+  const resultsContainer = document.getElementById('resultsContainer');
+
+  function updateBackendLabel() {
+    backendUrlLabel.textContent = backendUrlInput.value + '/restyle';
+  }
+  backendUrlInput.addEventListener('input', updateBackendLabel);
+  updateBackendLabel();
+
+  // --- Chip-style single-select (room type / color) ---
+  function setupChips(containerId, defaultValue) {
+    const container = document.getElementById(containerId);
+    let selected = defaultValue;
+    const chips = Array.from(container.querySelectorAll('.chip'));
+    function render() {
+      for (const chip of chips) {
+        chip.classList.toggle('selected', chip.dataset.value === selected);
+      }
+    }
+    for (const chip of chips) {
+      chip.addEventListener('click', () => {
+        selected = selected === chip.dataset.value && defaultValue === undefined ? undefined : chip.dataset.value;
+        render();
+      });
+    }
+    render();
+    return { get value() { return selected; } };
+  }
+  const roomType = setupChips('roomTypeChips', 'living_room_sofa');
+  const color = setupChips('colorChips', undefined);
+
+  // --- Primary photo: explicit Camera / Gallery buttons ---
+  const primaryPreview = document.getElementById('primaryPreview');
+  let primaryFile = null;
+
+  function setPrimaryFile(file) {
+    primaryFile = file;
+    resultsContainer.innerHTML = '';
+    status.textContent = '';
+    status.className = '';
+    if (file) {
+      primaryPreview.src = URL.createObjectURL(file);
+      primaryPreview.hidden = false;
+    } else {
+      primaryPreview.hidden = true;
+    }
+  }
+
+  document.getElementById('primaryCameraBtn').addEventListener('click', () => {
+    document.getElementById('primaryCameraInput').click();
+  });
+  document.getElementById('primaryGalleryBtn').addEventListener('click', () => {
+    document.getElementById('primaryGalleryInput').click();
+  });
+  document.getElementById('primaryCameraInput').addEventListener('change', (e) => {
+    if (e.target.files[0]) setPrimaryFile(e.target.files[0]);
+  });
+  document.getElementById('primaryGalleryInput').addEventListener('change', (e) => {
+    if (e.target.files[0]) setPrimaryFile(e.target.files[0]);
+  });
+
+  // --- Additional photos: explicit Camera / Gallery buttons, up to 3, with removable thumbnails ---
+  const MAX_ADDITIONAL = 3;
+  let additionalFiles = [];
+  const additionalThumbs = document.getElementById('additionalThumbs');
+
+  function renderAdditionalThumbs() {
+    additionalThumbs.innerHTML = '';
+    additionalFiles.forEach((file, index) => {
+      const thumb = document.createElement('div');
+      thumb.className = 'thumb';
+      thumb.innerHTML = `<img src="${URL.createObjectURL(file)}" /><button type="button" class="remove">&times;</button>`;
+      thumb.querySelector('.remove').addEventListener('click', () => {
+        additionalFiles.splice(index, 1);
+        renderAdditionalThumbs();
+      });
+      additionalThumbs.appendChild(thumb);
+    });
+    const atMax = additionalFiles.length >= MAX_ADDITIONAL;
+    document.getElementById('additionalCameraBtn').disabled = atMax;
+    document.getElementById('additionalGalleryBtn').disabled = atMax;
+  }
+
+  function addAdditionalFiles(newFiles) {
+    const remaining = MAX_ADDITIONAL - additionalFiles.length;
+    additionalFiles.push(...newFiles.slice(0, remaining));
+    renderAdditionalThumbs();
+  }
+
+  document.getElementById('additionalCameraBtn').addEventListener('click', () => {
+    if (additionalFiles.length >= MAX_ADDITIONAL) return;
+    document.getElementById('additionalCameraInput').click();
+  });
+  document.getElementById('additionalGalleryBtn').addEventListener('click', () => {
+    if (additionalFiles.length >= MAX_ADDITIONAL) return;
+    document.getElementById('additionalGalleryInput').click();
+  });
+  document.getElementById('additionalCameraInput').addEventListener('change', (e) => {
+    addAdditionalFiles(Array.from(e.target.files));
+    e.target.value = '';
+  });
+  document.getElementById('additionalGalleryInput').addEventListener('change', (e) => {
+    addAdditionalFiles(Array.from(e.target.files));
+    e.target.value = '';
+  });
+
+  // --- Results: tap/click a result image to view it full-size (native pinch-zoom in the browser's own image viewer) ---
+  function renderPair(container, originalSrc, resultSrc, label) {
+    const wrap = document.createElement('div');
+    wrap.className = 'images';
+    wrap.innerHTML = `
+      <figure><figcaption>${label} - Original</figcaption><img src="${originalSrc}" /></figure>
+      <figure><figcaption>${label} - Restyled (tap to zoom)</figcaption>${resultSrc ? `<a href="${resultSrc}" target="_blank" rel="noopener"><img class="zoomable" src="${resultSrc}" /></a>` : ''}</figure>
+    `;
+    container.appendChild(wrap);
+  }
+
+  restyleBtn.addEventListener('click', async () => {
+    if (!primaryFile) {
+      status.textContent = 'Pick a room photo first.';
+      status.className = 'error';
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('image', primaryFile);
+    for (const f of additionalFiles) formData.append('additionalPhotos', f);
+    formData.append('roomType', roomType.value);
+    if (color.value) formData.append('color', color.value);
+    if (roomLength.value.trim()) formData.append('roomLength', roomLength.value.trim());
+    if (roomWidth.value.trim()) formData.append('roomWidth', roomWidth.value.trim());
+    if (roomHeight.value.trim()) formData.append('roomHeight', roomHeight.value.trim());
+    if (promptOverride.value.trim()) formData.append('prompt', promptOverride.value.trim());
+    if (denoisingStrength.value.trim()) formData.append('denoisingStrength', denoisingStrength.value.trim());
+
+    restyleBtn.disabled = true;
+    status.className = '';
+    status.textContent = 'Restyling... this can take 10-60s depending on your GPU.';
+    resultsContainer.innerHTML = '';
+
+    const started = performance.now();
+    try {
+      const backendUrl = backendUrlInput.value.trim();
+      const res = await fetch(backendUrl + '/restyle', {
+        method: 'POST',
+        body: formData,
+      });
+      const text = await res.text();
+      if (!res.ok) {
+        throw new Error(`${res.status}: ${text}`);
+      }
+      const { jobId } = JSON.parse(text);
+
+      // The submit call only queues the job and returns immediately - actual
+      // generation (50-70s+) is polled for separately, each check fast, so no
+      // single request is held open long enough for a tunnel/proxy (e.g.
+      // zrok's public share, ~60s) to time it out on a real backend success.
+      let data;
+      while (true) {
+        await new Promise((resolve) => setTimeout(resolve, 3000));
+        const pollRes = await fetch(`${backendUrl}/restyle/${jobId}`);
+        const pollText = await pollRes.text();
+        if (!pollRes.ok) {
+          throw new Error(`${pollRes.status}: ${pollText}`);
+        }
+        data = JSON.parse(pollText);
+        if (data.status === 'done') break;
+        if (data.status === 'error') throw new Error(data.message);
+        const seconds = ((performance.now() - started) / 1000).toFixed(0);
+        status.textContent = `Restyling... still processing (${seconds}s so far).`;
+      }
+
+      const resultSrc = data.image ? 'data:image/png;base64,' + data.image : null;
+      renderPair(resultsContainer, URL.createObjectURL(primaryFile), resultSrc, 'Primary');
+      const seconds = ((performance.now() - started) / 1000).toFixed(1);
+      status.textContent = `Done in ${seconds}s.`;
+      status.className = 'ok';
+    } catch (err) {
+      status.textContent = 'Failed: ' + err.message;
+      status.className = 'error';
+    } finally {
+      restyleBtn.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>

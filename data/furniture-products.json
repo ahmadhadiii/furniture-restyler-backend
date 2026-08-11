@@ -1,0 +1,1422 @@
+[
+  {
+    "filename": "sofa-001.webp",
+    "product_name": "Briella Lux Sofa Set",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/briella-lux-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/10/briella-lux-koltuk-takimi004.webp",
+    "dimensions_cm": {
+      "width": 233,
+      "depth": 98,
+      "height": 77
+    },
+    "dimensions_source": "set_primary_component:Briella Lux Three-Seater Sofa",
+    "set_components": [
+      {
+        "name": "Briella Lux Three-Seater Sofa",
+        "wdh": {
+          "width": 233,
+          "depth": 98,
+          "height": 77
+        }
+      },
+      {
+        "name": "Briella Lux Armchair Salmon - Metal Bronze",
+        "wdh": {
+          "width": 75,
+          "depth": 88,
+          "height": 96
+        }
+      },
+      {
+        "name": "Briella Bergere Salmon",
+        "wdh": {
+          "width": 77,
+          "depth": 90,
+          "height": 94
+        }
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 2.33,
+      "height": 1.110390625
+    }
+  },
+  {
+    "filename": "sofa-002.webp",
+    "product_name": "Legato Sofa Set",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/legato-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/10/legato-koltuk-takimi001.webp",
+    "dimensions_cm": {
+      "width": 226,
+      "depth": 90,
+      "height": 80
+    },
+    "dimensions_source": "set_primary_component:Legato Three-Piece Sofa Legato Cream",
+    "set_components": [
+      {
+        "name": "Legato Three-Piece Sofa Legato Cream",
+        "wdh": {
+          "width": 226,
+          "depth": 90,
+          "height": 80
+        }
+      },
+      {
+        "name": "Legato Armchair - Legato Dark Gray",
+        "wdh": {
+          "width": 76,
+          "depth": 88,
+          "height": 93
+        }
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 2.26,
+      "height": 1.0060337552742615
+    }
+  },
+  {
+    "filename": "sofa-003.webp",
+    "product_name": "Linus Sofa Set",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/linus-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/08/linus-koltuk-takimi003.webp",
+    "dimensions_cm": {
+      "width": 248,
+      "depth": 89.5,
+      "height": 78
+    },
+    "dimensions_source": "set_primary_component:Linus Three-Seater Sofa",
+    "set_components": [
+      {
+        "name": "Linus Three-Seater Sofa",
+        "wdh": {
+          "width": 248,
+          "depth": 89.5,
+          "height": 78
+        }
+      },
+      {
+        "name": "Linus Berger",
+        "wdh": {
+          "width": 47,
+          "depth": 64,
+          "height": 46
+        }
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 2.48,
+      "height": 1.17
+    }
+  },
+  {
+    "filename": "sofa-004.jpg",
+    "product_name": "Shine Sofa Set",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/shine-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/shine-koltuk-takimi001.jpg",
+    "dimensions_cm": {
+      "width": 236,
+      "depth": 100,
+      "height": 84
+    },
+    "dimensions_source": "set_primary_component:Shine Three-Seater Sofa, Shine Cream",
+    "set_components": [
+      {
+        "name": "Shine Three-Seater Sofa, Shine Cream",
+        "wdh": {
+          "width": 236,
+          "depth": 100,
+          "height": 84
+        }
+      },
+      {
+        "name": "Shine Armchair Shine Cream",
+        "wdh": {
+          "width": 78.5,
+          "depth": 87.5,
+          "height": 91.5
+        }
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 2.36,
+      "height": 1.046972860125261
+    }
+  },
+  {
+    "filename": "sofa-005.webp",
+    "product_name": "Truva Sofa Set",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/truva-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/2-24.webp",
+    "dimensions_cm": {
+      "width": 215,
+      "depth": 91,
+      "height": 83
+    },
+    "dimensions_source": "set_primary_component:Truva Three-Seater Sofa",
+    "set_components": [
+      {
+        "name": "Truva Three-Seater Sofa",
+        "wdh": {
+          "width": 215,
+          "depth": 91,
+          "height": 83
+        }
+      },
+      {
+        "name": "Truva Three-Seater Sofa",
+        "wdh": {
+          "width": 215,
+          "depth": 91,
+          "height": 83
+        }
+      },
+      {
+        "name": "Truva Armchair",
+        "wdh": {
+          "width": 78,
+          "depth": 87,
+          "height": 93
+        }
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 2.15,
+      "height": 1.2449999999999999
+    }
+  },
+  {
+    "filename": "sofa-006.webp",
+    "product_name": "Fiona Sofa Set",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/fiona-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/h.webp",
+    "dimensions_cm": {
+      "width": 232,
+      "depth": 90,
+      "height": 76
+    },
+    "dimensions_source": "set_primary_component:Fiona Three-seater Sofa - Beige",
+    "set_components": [
+      {
+        "name": "Fiona Three-seater Sofa - Beige",
+        "wdh": {
+          "width": 232,
+          "depth": 90,
+          "height": 76
+        }
+      },
+      {
+        "name": "Fiona Three-seater Sofa - Oak",
+        "wdh": {
+          "width": 232,
+          "depth": 90,
+          "height": 76
+        }
+      },
+      {
+        "name": "Fiona Armchair - Beige",
+        "wdh": {
+          "width": 78,
+          "depth": 91,
+          "height": 94
+        }
+      },
+      {
+        "name": "Fiona Armchair - Oak",
+        "wdh": {
+          "width": 78,
+          "depth": 91,
+          "height": 94
+        }
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 2.32,
+      "height": 1.1400000000000001
+    }
+  },
+  {
+    "filename": "sofa-007.webp",
+    "product_name": "Briella Lux Three-Seater Sofa",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/briella-lux-three-seater-sofa/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/10/briella-lux-koltuk-takimi025.webp",
+    "dimensions_cm": {
+      "width": 233.5,
+      "depth": 98,
+      "height": 77
+    },
+    "bed_size": "190x93 cm",
+    "dimensions_source": "standalone_product_specs",
+    "ar_plane_meters": {
+      "width": 2.335,
+      "height": 0.88474609375
+    }
+  },
+  {
+    "filename": "armchair-002.webp",
+    "product_name": "Legato Three-Piece Sofa Legato Cream",
+    "category": "armchair",
+    "source_url": "https://istikbaliraq.com/product/legato-three-piece-sofa-legato-cream/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/10/legato-koltuk-takimi053.webp",
+    "dimensions_cm": {
+      "width": 226,
+      "depth": 90,
+      "height": 80.5
+    },
+    "bed_size": "181x107 cm",
+    "dimensions_source": "standalone_product_specs"
+  },
+  {
+    "filename": "sofa-008.webp",
+    "product_name": "Linus Three-Seater Sofa",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/linus-three-seater-sofa/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/08/linus-koltuk-takimi030.webp",
+    "dimensions_cm": {
+      "width": 248,
+      "depth": 89.5,
+      "height": 78
+    },
+    "bed_size": "189x90 cm",
+    "dimensions_source": "standalone_product_specs",
+    "ar_plane_meters": {
+      "width": 2.48,
+      "height": 0.883984375
+    }
+  },
+  {
+    "filename": "sofa-009.jpg",
+    "product_name": "Shine Three-Seater Sofa, Shine Cream",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/shine-three-seater-sofa-shine-cream/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/shine-koltuk-takimi033.jpg",
+    "dimensions_cm": {
+      "width": 236,
+      "depth": 100,
+      "height": 84
+    },
+    "dimensions_source": "standalone_product_specs",
+    "ar_plane_meters": {
+      "width": 2.36,
+      "height": 0.9011328125
+    }
+  },
+  {
+    "filename": "corner-sofa-001.jpg",
+    "product_name": "Legato Reclining Corner Sofa Set",
+    "category": "corner-sofa",
+    "source_url": "https://istikbaliraq.com/product/legato-reclining-corner-sofa-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/legato-uzanmali-kose-takimi020.jpg",
+    "dimensions_cm": {
+      "width": 257,
+      "depth": 152,
+      "height": 83
+    },
+    "bed_size": "235*108 cm",
+    "dimensions_source": "standalone_product_specs",
+    "ar_plane_meters": {
+      "width": 2.57,
+      "height": 1.2449999999999999
+    }
+  },
+  {
+    "filename": "corner-sofa-002.jpg",
+    "product_name": "Mary X Corner Sofa Borneo Gray",
+    "category": "corner-sofa",
+    "source_url": "https://istikbaliraq.com/product/mary-x-corner-sofa-borneo-gray/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/10/mary-x-borneo-gri-kose-takimi001.jpg",
+    "dimensions_cm": {
+      "width": 89,
+      "depth": 94,
+      "height": 44
+    },
+    "dimensions_source": "set_primary_component:Mary X Puffy Borneo Gray",
+    "set_components": [
+      {
+        "name": "Mary X Single Arm Single Borneo Gray"
+      },
+      {
+        "name": "Mary X Corner Piece Borneo Gray"
+      },
+      {
+        "name": "Mary X Sleeveless Single Borneo Gray"
+      },
+      {
+        "name": "Mary X Armchair Borneo Yellow",
+        "wdh": {
+          "width": 79,
+          "depth": 89,
+          "height": 89
+        }
+      },
+      {
+        "name": "Mary X Puffy Borneo Gray",
+        "wdh": {
+          "width": 89,
+          "depth": 94,
+          "height": 44
+        }
+      },
+      {
+        "name": "Mary X Joint Sleeve Borneo Grey"
+      },
+      {
+        "name": "Mary X Left Recliner Borneo Gray"
+      },
+      {
+        "name": "Mary X Sleeveless Two-Piece Borneo Gray"
+      }
+    ],
+    "ar_plane_meters": {
+      "width": 0.89,
+      "height": 0.5041015625
+    }
+  },
+  {
+    "filename": "corner-sofa-003.jpg",
+    "product_name": "Plato S Reclining Reverse Corner Sofa",
+    "category": "corner-sofa",
+    "source_url": "https://istikbaliraq.com/product/plato-s-reclining-reverse-corner-sofa/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/luxa-org-mirror-plato-s-uzanmali-kose-takimi014-11.jpg",
+    "dimensions_cm": {
+      "width": 280,
+      "depth": 97,
+      "height": 79
+    },
+    "dimensions_source": "standalone_og_description",
+    "ar_plane_meters": {
+      "width": 2.8,
+      "height": 0.9433593749999999
+    }
+  },
+  {
+    "filename": "bedroom-set-001.jpg",
+    "product_name": "Legato Bedroom Set",
+    "category": "bedroom-set",
+    "source_url": "https://istikbaliraq.com/product/legato-bedroom-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/legato-yatak-odasi011.jpg",
+    "dimensions_cm": {
+      "width": 180,
+      "length": 200
+    },
+    "dimensions_source": "set_primary_component:Alpha Flat Bed Base - Lorea Beige, 180X200",
+    "set_components": [
+      {
+        "name": "Legato Makyaj Masası",
+        "wdh": {
+          "width": 111.6,
+          "depth": 45,
+          "height": 160.2
+        }
+      },
+      {
+        "name": "Legato Heading - 180",
+        "wdh": {
+          "width": 194,
+          "depth": 18.5,
+          "height": 130
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Lorea Beige, 180X200",
+        "nameSize": {
+          "a": 180,
+          "b": 200
+        }
+      }
+    ]
+  },
+  {
+    "filename": "bedroom-set-002.webp",
+    "product_name": "Linus Bedroom Set",
+    "category": "bedroom-set",
+    "source_url": "https://istikbaliraq.com/product/linus-bedroom-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/10/linus-yatak-odasi001.webp",
+    "dimensions_cm": {
+      "width": 256,
+      "depth": 61,
+      "height": 215
+    },
+    "dimensions_source": "set_primary_component:Linus 6-Door Cabinet",
+    "set_components": [
+      {
+        "name": "Linus 6-Door Cabinet",
+        "wdh": {
+          "width": 256,
+          "depth": 61,
+          "height": 215
+        }
+      },
+      {
+        "name": "Linus BAZA 180"
+      },
+      {
+        "name": "Linus Header 180"
+      },
+      {
+        "name": "Linus Dressing Table"
+      },
+      {
+        "name": "Linus Dresser"
+      },
+      {
+        "name": "Linus Nightstand"
+      }
+    ]
+  },
+  {
+    "filename": "bedroom-set-003.webp",
+    "product_name": "Truva Bedroom Set",
+    "category": "bedroom-set",
+    "source_url": "https://istikbaliraq.com/product/truva-bedroom-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/truva-yatak-odasi001.webp",
+    "dimensions_cm": {
+      "width": 150,
+      "length": 200
+    },
+    "dimensions_source": "set_primary_component:Alpha Flat Bed Base - Zeus Powder, 150X200",
+    "set_components": [
+      {
+        "name": "Truva  Title - 150X200",
+        "nameSize": {
+          "a": 150,
+          "b": 200
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Zeus Powder, 150X200",
+        "nameSize": {
+          "a": 150,
+          "b": 200
+        }
+      },
+      {
+        "name": "Truva  Title - 160X200",
+        "nameSize": {
+          "a": 160,
+          "b": 200
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Zeus Powder, 160X200",
+        "nameSize": {
+          "a": 160,
+          "b": 200
+        }
+      },
+      {
+        "name": "Truva  Title - 180X200",
+        "nameSize": {
+          "a": 180,
+          "b": 200
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Zeus Powder, 180X200",
+        "nameSize": {
+          "a": 180,
+          "b": 200
+        }
+      },
+      {
+        "name": "Base Foot Package"
+      }
+    ]
+  },
+  {
+    "filename": "bedroom-set-004.webp",
+    "product_name": "Fiona Bedroom Set",
+    "category": "bedroom-set",
+    "source_url": "https://istikbaliraq.com/product/fiona-bedroom-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/emptyname-27.webp",
+    "dimensions_cm": {
+      "width": 180,
+      "length": 200
+    },
+    "dimensions_source": "set_primary_component:Alpha Flat Bed Base - Esse S. Coffee, 180X200",
+    "set_components": [
+      {
+        "name": "Fiona Headline - 180",
+        "wdh": {
+          "width": 180,
+          "depth": 10,
+          "height": 133
+        }
+      },
+      {
+        "name": "Fiona Headline - 160",
+        "wdh": {
+          "width": 160,
+          "depth": 10,
+          "height": 133
+        }
+      },
+      {
+        "name": "Fiona Headline - 150",
+        "wdh": {
+          "width": 150,
+          "depth": 10,
+          "height": 133
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Esse S. Coffee, 180X200",
+        "nameSize": {
+          "a": 180,
+          "b": 200
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Esse S. Coffee, 160X200",
+        "nameSize": {
+          "a": 160,
+          "b": 200
+        }
+      },
+      {
+        "name": "Base Foot Package"
+      },
+      {
+        "name": "Alpha Flat Bed Base - Esse S. Coffee, 150X200",
+        "nameSize": {
+          "a": 150,
+          "b": 200
+        }
+      }
+    ]
+  },
+  {
+    "filename": "bedroom-set-005.webp",
+    "product_name": "Alexa Bedroom Set",
+    "category": "bedroom-set",
+    "source_url": "https://istikbaliraq.com/product/alexa-bedroom-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/alexa-yatak-odasi010.webp",
+    "dimensions_cm": {
+      "width": 160,
+      "length": 200
+    },
+    "dimensions_source": "set_primary_component:Alpha Flat Bed Base - Buklet Gray, 160X200",
+    "set_components": [
+      {
+        "name": "Alexa Title - Linen A.Grey, 160"
+      },
+      {
+        "name": "Alexa Title - Linen A.Grey, 180"
+      },
+      {
+        "name": "Alpha Flat Bed Base - Buklet Gray, 160X200",
+        "nameSize": {
+          "a": 160,
+          "b": 200
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Buklet Gray, 180X200",
+        "nameSize": {
+          "a": 180,
+          "b": 200
+        }
+      },
+      {
+        "name": "Base Foot Package"
+      }
+    ]
+  },
+  {
+    "filename": "bedroom-set-006.jpg",
+    "product_name": "Borneo Bohemian Set - Mitra Begie",
+    "category": "bedroom-set",
+    "source_url": "https://istikbaliraq.com/product/borneo-bohemian-set/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/01/borneo-yatak-odasi010.jpg",
+    "dimensions_cm": {
+      "width": 160,
+      "length": 200
+    },
+    "dimensions_source": "set_primary_component:Alpha Flat Bed Base - Allure Cream, 160X200",
+    "set_components": [
+      {
+        "name": "Borneo Sliding Door Wardrobe",
+        "wdh": {
+          "width": 234.6,
+          "depth": 69,
+          "height": 210
+        }
+      },
+      {
+        "name": "Borneo 6 Door Cabinet",
+        "wdh": {
+          "width": 270,
+          "depth": 61,
+          "height": 219
+        }
+      },
+      {
+        "name": "Borneo Makeup Mirror",
+        "wdh": {
+          "width": 79,
+          "depth": 2,
+          "height": 69
+        }
+      },
+      {
+        "name": "Borneo Dressing Table",
+        "wdh": {
+          "width": 131,
+          "depth": 43,
+          "height": 80
+        }
+      },
+      {
+        "name": "Borneo Pouf Mitra Beige"
+      },
+      {
+        "name": "Borneo Dresser",
+        "wdh": {
+          "width": 62,
+          "depth": 43,
+          "height": 95
+        }
+      },
+      {
+        "name": "Borneo Nightstand",
+        "wdh": {
+          "width": 45,
+          "depth": 43,
+          "height": 54
+        }
+      },
+      {
+        "name": "Borneo Headboard - Mitra Beige - 160"
+      },
+      {
+        "name": "Borneo Headboard - Mitra Beige - 180"
+      },
+      {
+        "name": "Alpha Flat Bed Base - Allure Cream, 160X200",
+        "nameSize": {
+          "a": 160,
+          "b": 200
+        }
+      },
+      {
+        "name": "Alpha Flat Bed Base - Allure Cream, 180X200",
+        "nameSize": {
+          "a": 180,
+          "b": 200
+        }
+      },
+      {
+        "name": "Base Foot Package"
+      }
+    ]
+  },
+  {
+    "filename": "dining-table-001.jpg",
+    "product_name": "Legato Extendable Table",
+    "category": "dining-table",
+    "source_url": "https://istikbaliraq.com/product/legato-extendable-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/zzz36.jpg",
+    "dimensions_cm": {
+      "width": 204,
+      "depth": 90,
+      "height": 78.1
+    },
+    "dimensions_source": "standalone_product_specs"
+  },
+  {
+    "filename": "dining-table-002.webp",
+    "product_name": "Truva Fixed Table",
+    "category": "dining-table",
+    "source_url": "https://istikbaliraq.com/product/truva-fixed-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/truva-yemek-odasi033.webp",
+    "dimensions_cm": {
+      "width": 200,
+      "depth": 100,
+      "height": 76
+    },
+    "dimensions_source": "standalone_og_description"
+  },
+  {
+    "filename": "dining-table-003.webp",
+    "product_name": "Linus Fixed Table",
+    "category": "dining-table",
+    "source_url": "https://istikbaliraq.com/product/linus-fixed-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/linus-yemek-odasi095.webp",
+    "dimensions_cm": {
+      "width": 200,
+      "depth": 110,
+      "height": 74.5
+    },
+    "dimensions_source": "standalone_product_specs"
+  },
+  {
+    "filename": "dining-table-004.webp",
+    "product_name": "Linus Pop-Up Desk",
+    "category": "dining-table",
+    "source_url": "https://istikbaliraq.com/product/linus-pop-up-desk/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/08/linus-yemek-odasi040.webp",
+    "dimensions_cm": {
+      "width": 240,
+      "depth": 100,
+      "height": 80.8
+    },
+    "dimensions_source": "standalone_og_description"
+  },
+  {
+    "filename": "dining-chair-001.webp",
+    "product_name": "Legato 8250 Set of 2 Chairs",
+    "category": "dining-chair",
+    "source_url": "https://istikbaliraq.com/product/legato-8250-set-of-2-chairs/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/zzz31.webp",
+    "dimensions_cm": {
+      "width": 41.5,
+      "depth": 52.2,
+      "height": 92
+    },
+    "dimensions_source": "standalone_product_specs"
+  },
+  {
+    "filename": "dining-chair-002.webp",
+    "product_name": "Legato 8251 Set of 2 Chairs",
+    "category": "dining-chair",
+    "source_url": "https://istikbaliraq.com/product/legato-8251-set-of-2-chairs/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2026/03/zzz32.webp",
+    "dimensions_cm": {
+      "width": 38.5,
+      "depth": 47,
+      "height": 86
+    },
+    "dimensions_source": "standalone_product_specs"
+  },
+  {
+    "filename": "dining-bench-001.webp",
+    "product_name": "Linus 8247 2-Seater Chair",
+    "category": "dining-bench",
+    "source_url": "https://istikbaliraq.com/product/linus-8247-2-seater-chair/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/08/linus-yemek-odasi038.webp",
+    "dimensions_cm": {
+      "width": 52,
+      "depth": 51.5,
+      "height": 84
+    },
+    "dimensions_source": "standalone_product_specs"
+  },
+  {
+    "filename": "dining-chair-004.webp",
+    "product_name": "Truva 8237 2-Piece Chair",
+    "category": "dining-chair",
+    "source_url": "https://istikbaliraq.com/product/truva-8237-2-piece-chair/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/truva-yemek-odasi039.webp",
+    "dimensions_cm": {
+      "width": 46.5,
+      "depth": 46.5,
+      "height": 91.5
+    },
+    "dimensions_source": "standalone_og_description"
+  },
+  {
+    "filename": "corner-sofa-004.webp",
+    "product_name": "Plato S Corner Sofa",
+    "category": "corner-sofa",
+    "source_url": "https://istikbaliraq.com/product/plato-s-corner-sofa/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/plato-s-kose-takimi-somon-mavi026.webp",
+    "dimensions_cm": {
+      "width": 282,
+      "depth": 97,
+      "height": 79
+    },
+    "dimensions_source": "standalone_og_description",
+    "ar_plane_meters": {
+      "width": 2.82,
+      "height": 0.7270312499999999
+    }
+  },
+  {
+    "filename": "sofa-010.webp",
+    "product_name": "Truva Three-Seater Sofa",
+    "category": "sofa",
+    "source_url": "https://istikbaliraq.com/product/truva-three-seater-sofa/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/truva-koltuk-takimi051.webp",
+    "dimensions_cm": null,
+    "dimensions_source": "error",
+    "error": "Error: HTTP 404 for https://istikbaliraq.com/product/truva-three-seater-sofa/"
+  },
+  {
+    "filename": "dining-chair-005.jpg",
+    "product_name": "Fiona 8235 2-seater Chair",
+    "category": "dining-chair",
+    "source_url": "https://istikbaliraq.com/product/fiona-8235-2-seater-chair/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/fiona-yemek-odasi-080.jpg",
+    "dimensions_cm": null,
+    "dimensions_source": "not_found",
+    "set_components": []
+  },
+  {
+    "filename": "coffee-table-001.jpg",
+    "product_name": "Legato Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/legato-coffee-table/",
+    "image_url": "http://istikbaliraq.com/wp-content/uploads/2026/03/legato-orta-yan-sehpa-002.jpg",
+    "dimensions_cm": {
+      "width": 80,
+      "depth": null,
+      "height": 44
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.8,
+      "height": 0.5277641277641278
+    }
+  },
+  {
+    "filename": "coffee-table-002.jpg",
+    "product_name": "Linus Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/40194/",
+    "image_url": "http://istikbaliraq.com/wp-content/uploads/2026/03/linus-koltuk-takimi076.jpg",
+    "dimensions_cm": {
+      "width": 80,
+      "depth": 80,
+      "height": 49
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.8,
+      "height": 0.43541666666666673
+    }
+  },
+  {
+    "filename": "coffee-table-003.jpg",
+    "product_name": "Shine Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/shine-coffee-table/",
+    "image_url": "http://istikbaliraq.com/wp-content/uploads/2026/03/shine-koltuk-takimi042.jpg",
+    "dimensions_cm": {
+      "width": 90,
+      "depth": 90,
+      "height": 42
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.9,
+      "height": 0.5530569948186529
+    }
+  },
+  {
+    "filename": "coffee-table-004.webp",
+    "product_name": "Truva Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/troy-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/truva-koltuk-takimi056.webp",
+    "dimensions_cm": {
+      "width": 80,
+      "depth": 80,
+      "height": 45.5
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.8,
+      "height": 0.530981256890849
+    }
+  },
+  {
+    "filename": "coffee-table-005.webp",
+    "product_name": "Fiona Coffee Table with Drawers",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/fiona-coffee-table-with-drawers/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/fiona-orta-sehpa001.webp",
+    "dimensions_cm": {
+      "width": 120,
+      "depth": 75,
+      "height": 42
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.2,
+      "height": 0.500390625
+    }
+  },
+  {
+    "filename": "coffee-table-006.webp",
+    "product_name": "Lenor Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/lenor-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/04/lenor-koltuk-takimi062.webp",
+    "dimensions_cm": {
+      "width": 75,
+      "depth": 75,
+      "height": 40
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.75,
+      "height": 0.5251989389920424
+    }
+  },
+  {
+    "filename": "coffee-table-007.webp",
+    "product_name": "Teddy Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/teddy-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/teddy-kose-takimi-076.webp",
+    "dimensions_cm": {
+      "width": 90,
+      "depth": 90,
+      "height": 52
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.9,
+      "height": 0.454147465437788
+    }
+  },
+  {
+    "filename": "coffee-table-008.webp",
+    "product_name": "Briella Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/briella-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/03/briella-koltuk-takimi055.webp",
+    "dimensions_cm": {
+      "width": 106,
+      "depth": 69,
+      "height": 36
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.06,
+      "height": 0.54
+    }
+  },
+  {
+    "filename": "coffee-table-009.webp",
+    "product_name": "Borneo Bohemian Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/borneo-bohemian-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/hjhjh.webp",
+    "dimensions_cm": {
+      "width": 74.5,
+      "depth": 74.5,
+      "height": 43.5
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.745,
+      "height": 0.5157692307692308
+    }
+  },
+  {
+    "filename": "coffee-table-010.jpg",
+    "product_name": "Borneo Side Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/borneo-side-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/borneo-koltuk-takimi073.jpg",
+    "dimensions_cm": {
+      "width": 59.5,
+      "depth": 59.5,
+      "height": 48
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.595,
+      "height": 0.5495
+    }
+  },
+  {
+    "filename": "coffee-table-011.webp",
+    "product_name": "Trio Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/trio-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/emptyname-73.webp",
+    "dimensions_cm": {
+      "width": 70,
+      "depth": 70,
+      "height": 45
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.7,
+      "height": 0.5673684210526315
+    }
+  },
+  {
+    "filename": "coffee-table-012.webp",
+    "product_name": "Vanessa Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/vanessa-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/vanessa-antrasit-krem-koltuk-takimi-060.webp",
+    "dimensions_cm": {
+      "width": 98,
+      "depth": 98,
+      "height": 41
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.98,
+      "height": 0.5896470588235294
+    }
+  },
+  {
+    "filename": "coffee-table-013.webp",
+    "product_name": "Albero Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/albero-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/albero-koltuk-takimi030.webp",
+    "dimensions_cm": {
+      "width": 88,
+      "depth": 88,
+      "height": 40
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.88,
+      "height": 0.421953125
+    }
+  },
+  {
+    "filename": "coffee-table-014.webp",
+    "product_name": "Alya Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/alya-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/alya-koltuk-takimi110.webp",
+    "dimensions_cm": {
+      "width": 104,
+      "depth": 57,
+      "height": 46
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.04,
+      "height": 0.63984375
+    }
+  },
+  {
+    "filename": "coffee-table-015.webp",
+    "product_name": "Aysa Coffee Table with Drawers",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/aysa-coffee-table-with-drawers/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-22ays3305zizi-3.webp",
+    "dimensions_cm": {
+      "width": 80,
+      "depth": 120,
+      "height": 43
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.8,
+      "height": 0.42308892355694233
+    }
+  },
+  {
+    "filename": "coffee-table-016.webp",
+    "product_name": "Blanca Orta Sehpa",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/blanca-orta-sehpa/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/04/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20ablsh2300000001-7.webp",
+    "dimensions_cm": {
+      "width": 68,
+      "depth": 130,
+      "height": 40
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.68,
+      "height": 0.26540606060606065
+    }
+  },
+  {
+    "filename": "coffee-table-017.webp",
+    "product_name": "Talia Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/talia-coffee-table-large/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20atash2300000001-12.webp",
+    "dimensions_cm": {
+      "width": 92,
+      "depth": 92,
+      "height": 45
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.92,
+      "height": 0.5413991769547325
+    }
+  },
+  {
+    "filename": "coffee-table-018.webp",
+    "product_name": "Talia Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/talia-coffee-table-small/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20atash2300000002-9.webp",
+    "dimensions_cm": {
+      "width": 77,
+      "depth": 77,
+      "height": 40
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.77,
+      "height": 0.4826141732283465
+    }
+  },
+  {
+    "filename": "coffee-table-019.jpg",
+    "product_name": "Cross Square Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/cross-square-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-22crs3301ckcn-5.jpg",
+    "dimensions_cm": {
+      "width": 80,
+      "depth": 80,
+      "height": 44
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.8,
+      "height": 0.6450632911392405
+    }
+  },
+  {
+    "filename": "coffee-table-020.webp",
+    "product_name": "Oliver Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/oliver-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-22ovr3300zyzy-11.webp",
+    "dimensions_cm": {
+      "width": 112,
+      "depth": 75,
+      "height": 43
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.12,
+      "height": 0.5515447154471546
+    }
+  },
+  {
+    "filename": "coffee-table-021.webp",
+    "product_name": "Green Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/green-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20agren2300000001-3.webp",
+    "dimensions_cm": {
+      "width": 118,
+      "depth": 62,
+      "height": 39
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.18,
+      "height": 0.585
+    }
+  },
+  {
+    "filename": "coffee-table-022.webp",
+    "product_name": "Dora Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/dora-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/dora-koltuk-takimi098.webp",
+    "dimensions_cm": {
+      "width": 85,
+      "depth": 85,
+      "height": 45
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.85,
+      "height": 0.6366699218749999
+    }
+  },
+  {
+    "filename": "coffee-table-023.webp",
+    "product_name": "Lena Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/lena-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-22len3300fdmw-12.webp",
+    "dimensions_cm": {
+      "width": 104,
+      "depth": 69,
+      "height": 43
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.04,
+      "height": 0.645
+    }
+  },
+  {
+    "filename": "coffee-table-024.webp",
+    "product_name": "Marven Coffee Table with Drawers",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/marven-coffee-table-with-drawers/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/marven-gri-su-yesili-koltuk-takimi058.webp",
+    "dimensions_cm": {
+      "width": 100,
+      "depth": 70,
+      "height": 40
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1,
+      "height": 0.4782608695652174
+    }
+  },
+  {
+    "filename": "coffee-table-025.webp",
+    "product_name": "Mary Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/mary-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-22mey3305hxbo-2.webp",
+    "dimensions_cm": {
+      "width": 90,
+      "depth": 90,
+      "height": 33
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.9,
+      "height": 0.48955078125
+    }
+  },
+  {
+    "filename": "coffee-table-026.webp",
+    "product_name": "Mellow Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/mellow-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/zemptyname24.webp",
+    "dimensions_cm": {
+      "width": 89,
+      "depth": 89,
+      "height": 43
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.89,
+      "height": 0.588733850129199
+    }
+  },
+  {
+    "filename": "coffee-table-027.webp",
+    "product_name": "Misty Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/misty-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20amiss2300000001-9.webp",
+    "dimensions_cm": {
+      "width": 104,
+      "depth": 69,
+      "height": 36
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.04,
+      "height": 0.54
+    }
+  },
+  {
+    "filename": "coffee-table-028.webp",
+    "product_name": "Mitra Corner Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/mitra-corner-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/2-43.webp",
+    "dimensions_cm": {
+      "width": 96,
+      "depth": 37,
+      "height": 52
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 0.96,
+      "height": 0.5704109589041095
+    }
+  },
+  {
+    "filename": "coffee-table-029.webp",
+    "product_name": "Mitra Oval Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/mitra-oval-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/04/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20amise5q00000001-2.webp",
+    "dimensions_cm": {
+      "width": 103,
+      "depth": 50,
+      "height": 48
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.03,
+      "height": 0.5296701649175412
+    }
+  },
+  {
+    "filename": "coffee-table-030.webp",
+    "product_name": "Platin Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/platinum-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/05/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20aplas2300000001-2.webp",
+    "dimensions_cm": {
+      "width": 121,
+      "depth": 71,
+      "height": 44
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.21,
+      "height": 0.49592548076923076
+    }
+  },
+  {
+    "filename": "coffee-table-031.webp",
+    "product_name": "Elizya Smart Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/elizya-smart-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/marven-gri-su-yesili-koltuk-takimi058.webp",
+    "dimensions_cm": {
+      "width": 180,
+      "depth": 44,
+      "height": 69
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.8,
+      "height": 0.9719582850521437
+    }
+  },
+  {
+    "filename": "coffee-table-032.webp",
+    "product_name": "Vanessa Coffee Table with Drawers",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/vanessa-coffee-table-with-drawers/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2024/10/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-22vsn3305vevb-2.webp",
+    "dimensions_cm": {
+      "width": 110,
+      "depth": 44,
+      "height": 69
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.1,
+      "height": 0.5098540145985402
+    }
+  },
+  {
+    "filename": "coffee-table-033.webp",
+    "product_name": "Elizya Coffee Table",
+    "category": "coffee-table",
+    "source_url": "https://istikbaliraq.com/product/elizya-coffee-table/",
+    "image_url": "https://istikbaliraq.com/wp-content/uploads/2025/06/https-istikbal-mncdn-com-mnresize-1280-720-img-image-tr-20aelzsb000000001-2.webp",
+    "dimensions_cm": {
+      "width": 104,
+      "depth": null,
+      "height": 38
+    },
+    "dimensions_source": "og:description",
+    "ar_plane_meters": {
+      "width": 1.04,
+      "height": 0.5700000000000001
+    }
+  }
+]
