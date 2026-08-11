@@ -26,9 +26,12 @@ async function fetchText(url) {
   return res.text();
 }
 
+const MAX_LISTING_PAGES = 4;
+
 async function listProductUrls() {
   const urls = new Set();
-  for (let page = 1; page <= 4; page++) {
+  let page = 1;
+  for (; page <= MAX_LISTING_PAGES; page++) {
     const pageUrl = page === 1 ? LISTING_BASE : `${LISTING_BASE}page/${page}/`;
     let html;
     try {
@@ -40,6 +43,17 @@ async function listProductUrls() {
     if (matches.length === 0) break;
     for (const m of matches) urls.add(m[1]);
   }
+  // If the loop only stopped because it hit MAX_LISTING_PAGES (not because
+  // a page came back empty/missing), the category may have grown past what
+  // this cap covers - there's no way to tell "exactly 4 pages" apart from
+  // "more than 4 pages" without this warning, and undercounting would
+  // otherwise look identical to a clean, complete scrape.
+  if (page > MAX_LISTING_PAGES) {
+    console.warn(
+      `WARNING: hit the ${MAX_LISTING_PAGES}-page cap without finding an empty page - there may be more ` +
+        `coffee tables beyond page ${MAX_LISTING_PAGES} that were never fetched. Raise MAX_LISTING_PAGES if so.`,
+    );
+  }
   return [...urls];
 }
 
@@ -49,7 +63,10 @@ function extractMeta(html, property) {
 }
 
 function extractDimension(text, letter) {
-  const m = text ? text.match(new RegExp(`${letter}\\s*(\\d+(?:\\.\\d+)?)\\s*cm`, 'i')) : null;
+  // \b before the letter so a stray matching letter elsewhere in free-text
+  // description content immediately followed by "<number>cm" (e.g. part of
+  // a promotional phrase or SKU) can't be misread as a dimension marker.
+  const m = text ? text.match(new RegExp(`\\b${letter}\\s*(\\d+(?:\\.\\d+)?)\\s*cm`, 'i')) : null;
   return m ? parseFloat(m[1]) : null;
 }
 
@@ -65,6 +82,14 @@ async function scrapeProduct(url) {
 
   if (width == null && height == null) {
     return { ok: false, reason: 'no W/H found in og:description', description };
+  }
+  if (!imageUrl) {
+    // Without this check, a product with valid dimensions but a missing
+    // og:image still returned ok:true, and `new URL(null)` in main()'s
+    // filename-extension lookup threw a generic TypeError - caught by
+    // main()'s catch block and logged indistinguishably from a real
+    // network error, silently dropping an otherwise-good record.
+    return { ok: false, reason: 'no og:image found', description };
   }
 
   return {

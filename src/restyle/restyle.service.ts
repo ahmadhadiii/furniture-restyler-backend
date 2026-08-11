@@ -137,7 +137,19 @@ export class RestyleService {
       // job_status is just a free-text status message, not for control flow.
       if (data?.job_stage === 'SUCCESS') {
         const jobResult = Array.isArray(data?.job_result) ? data.job_result[0] : data?.job_result;
-        job.result = await this.finishJob(job, jobResult);
+        try {
+          job.result = await this.finishJob(job, jobResult);
+        } catch (error: any) {
+          // finishJob failing (e.g. compositeOverOriginal choking on a
+          // corrupt/truncated base64 image from Fooocus) is a real,
+          // permanent failure - not the transient polling blip the outer
+          // catch below is meant to shrug off. Without this, the exception
+          // would be caught there instead and the job would report
+          // "processing" forever with no diagnostic, since job.result never
+          // gets set.
+          this.logger.error(`finishJob failed for job ${jobId}: ${error?.message ?? error}`);
+          job.result = { status: 'error', message: `Failed to finish job: ${error?.message ?? error}` };
+        }
         return job.result;
       }
       if (data?.job_stage === 'ERROR') {
@@ -297,15 +309,22 @@ export class RestyleService {
     // 2. Fooocus's own mask compositing still isn't guaranteed pixel-exact, so
     //    our own compositing runs afterward as a hard guarantee that anything
     //    outside the real mask is byte-identical to the original photo.
-    const denoisingStrength = overrides.denoisingStrength ?? Number(this.config.get('DENOISING_STRENGTH'));
+    const denoisingStrength = overrides.denoisingStrength ?? Number(this.config.get('DENOISING_STRENGTH') ?? 0.85);
 
     // Fooocus-API always wants a mask for its inpaint-outpaint endpoint; when
     // auto-segmentation didn't produce one, fall back to an all-white
     // (fully editable) mask so behavior matches the old "whole-image restyle"
     // fallback path.
-    const maskBuffer = mask ?? (await sharp({
+    const rawMaskBuffer = mask ?? (await sharp({
       create: { width, height, channels: 3, background: { r: 255, g: 255, b: 255 } },
     }).png().toBuffer());
+    // Force-resized to width x height like resizedImageBuffer below - a
+    // no-op for the auto-segmented mask (already built at this size), but a
+    // real fix for a client-supplied overrides.mask (dev/test-page path),
+    // which otherwise has no guarantee of matching the generation
+    // dimensions and would hit the exact shape-broadcast error described
+    // below, just on the mask side instead of the image side.
+    const maskBuffer = await sharp(rawMaskBuffer).resize(width, height, { fit: 'fill' }).png().toBuffer();
 
     // Unlike A1111 (which took explicit width/height fields and resized
     // internally), Fooocus-API pairs input_image and input_mask at whatever
@@ -345,7 +364,7 @@ export class RestyleService {
     const remainingSlotsForReferences = 4 - (isInpaint ? 1 : 0) - (furnitureProductImage ? 1 : 0);
     const cnSlots: { image: Buffer; type: string; weight: number }[] = [];
     if (isInpaint) {
-      cnSlots.push({ image: resizedImageBuffer, type: 'CPDS', weight: 0.5 });
+      cnSlots.push({ image: resizedImageBuffer, type: 'CPDS', weight: overrides.controlnetWeight ?? 0.5 });
     }
     if (furnitureProductImage) {
       // Higher weight than a plain additional-angle photo (0.5) - this is

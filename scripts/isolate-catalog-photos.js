@@ -120,14 +120,34 @@ async function main() {
     const destDir = path.join(DEST_ROOT, roomType);
     fs.mkdirSync(destDir, { recursive: true });
 
-    for (const file of fs.readdirSync(srcDir).filter((f) => !f.startsWith('.'))) {
+    const files = fs.readdirSync(srcDir).filter((f) => !f.startsWith('.'));
+    let successCount = 0;
+    for (const file of files) {
       const destName = file.replace(/\.[^.]+$/, '.png');
       try {
         const result = await isolate(path.join(srcDir, file), path.join(destDir, destName));
         console.log(roomType, file, '->', JSON.stringify(result));
+        if (result.ok) successCount++;
       } catch (error) {
         console.log(roomType, file, '-> ERROR', error.message);
       }
+    }
+
+    // This script only isolates ADE20K's SOFA_CLASS (see top of file) - it
+    // is NOT a generic per-category isolator. Running it against a room
+    // type whose furniture isn't a sofa (e.g. coffee tables) will find ~0
+    // sofa pixels in every photo and silently produce an empty (but
+    // existing) destDir, which downstream scripts don't distinguish from
+    // "successfully isolated nothing because there's nothing here" - this
+    // warning is the only signal that something is actually wrong.
+    if (files.length > 0 && successCount === 0) {
+      console.warn(
+        `WARNING: 0 of ${files.length} photos isolated for "${roomType}" - this script only detects ` +
+          `ADE20K's sofa class. If this category's furniture isn't a sofa, it either needs its own class ` +
+          `ID added here, or (if the source photos are already clean single-item shots with no background ` +
+          `clutter) skip this script entirely and copy the photos directly into ` +
+          `data/furniture-images-isolated/${roomType}/ instead.`,
+      );
     }
   }
 }
