@@ -21,7 +21,7 @@ class RestyleOverrides {
   roomLength?: string;
   roomWidth?: string;
   roomHeight?: string;
-  // Id of a specific real product from GET /furniture-catalog/:roomType
+  // Id of a specific real product from GET /furniture-catalog/:catalogKey
   // (e.g. "sofa-003") - when given, that product's own real photo is used
   // as a strong generation reference so the result is nudged toward that
   // specific item rather than the AI improvising a generic one.
